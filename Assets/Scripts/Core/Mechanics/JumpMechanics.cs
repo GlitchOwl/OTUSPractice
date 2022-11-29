@@ -2,7 +2,7 @@ using System.Collections;
 using Elementary;
 using UnityEngine;
 
-namespace Core
+namespace Core.Mechanics
 {
     public class JumpMechanics : MonoBehaviour
     {

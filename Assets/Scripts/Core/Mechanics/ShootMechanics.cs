@@ -1,16 +1,14 @@
 using Elementary;
-using Scripts;
 using UnityEngine;
 
-namespace Core
+namespace Core.Mechanics
 {
+    [RequireComponent(typeof(BulletShooter))]
     public class ShootMechanics : MonoBehaviour
     {
         [SerializeField] private EventReceiver shootReceiver;
 
-        [SerializeField] private Transform spawnPoint;
-
-        [SerializeField] private Bullet bullet;
+        [SerializeField] private BulletShooter shooter;
 
         private void OnEnable()
         {
@@ -25,7 +23,7 @@ namespace Core
 
         private void Shoot()
         {
-            Destroy(Instantiate(bullet, spawnPoint.position, Quaternion.identity).gameObject, 5f);
+            shooter.Shoot();
         }
     }
 }

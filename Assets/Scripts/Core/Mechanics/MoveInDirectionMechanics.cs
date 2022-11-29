@@ -1,7 +1,7 @@
 using CustomElementary;
 using UnityEngine;
 
-namespace Core
+namespace Core.Mechanics
 {
     public class MoveInDirectionMechanics : MonoBehaviour
     {

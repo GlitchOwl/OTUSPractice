@@ -1,8 +1,7 @@
-using System;
 using Elementary;
 using UnityEngine;
 
-namespace Core
+namespace Core.Mechanics
 {
     public class DeathMechanics : MonoBehaviour
     {
